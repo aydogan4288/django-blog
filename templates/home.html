@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+  {% block title %}Home Page - {{block.super}} {% endblock %}
+  {% block body %}
+
+  <div class="container-fluid">
+      <!-- <div class="row" style="margin-bottom: 30px;">
+        <div class="col-md-3 col-sm-6" style="background-color: red; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6 " style="background-color: green; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6" style="background-color: blue; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6" style="background-color: yellow; height: 100px;" > 1.row</div>
+
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div class="col-md-3 col-sm-6" style="background-color: red; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6 " style="background-color: green; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6" style="background-color: blue; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6" style="background-color: yellow; height: 100px;" > 1.row</div>
+
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div class="col-md-3 col-sm-6" style="background-color: red; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6 " style="background-color: green; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6" style="background-color: blue; height: 100px;" > 1.row</div>
+        <div class="col-md-3 col-sm-6" style="background-color: yellow; height: 100px;" > 1.row</div>
+
+      </div> -->
+      <div class="row">
+        <div class="col-md-8" style="background-color: red; height: 100px;"></div>
+        <div class="col-md-4" style="background-color: yellow; height: 100px;">
+            <div class="row">
+              <div class="col-md-2" style= "background-color: blue; height: 100px;"></div>
+              <div class="col-md-8" style="background-color: green; height: 100px;"></div>
+              <div class="col-md-2" style="background-color: black; height: 100px;"></div>
+            </div>
+        </div>
+
+        Welcome {{request.user.get_full_name}}
+  </div>
+
+  {% endblock %}
