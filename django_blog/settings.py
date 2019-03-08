@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1x(*wsqm-!#3l(a0*gk0-a2*e&li+qzam8(^hvr1r$rlv0cq=g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.17.191.85']
 
 
 # Application definition
@@ -124,10 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
 
@@ -145,6 +143,6 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-RECAPTCHA_PUBLIC_KEY = '6Le6_XwUAAAAACqrDh-m1iG9-kpgCK1I84luax56'
-RECAPTCHA_PRIVATE_KEY = '6Le6_XwUAAAAANd8VP2NskG7pYVcxRVe7BMpODkS'
+RECAPTCHA_PUBLIC_KEY = '6LdYdpYUAAAAAJsT_I35Mo1l2ozGqdVH8ZdLngOE'
+RECAPTCHA_PRIVATE_KEY = '6LdYdpYUAAAAACFfpmsbu6Vwxk_tE9EZlU2l78hN'
 NOCAPTCHA = True
