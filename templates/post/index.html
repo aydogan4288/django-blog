@@ -14,7 +14,7 @@
               <img src="{{post.image.url}}" class="img-fluid img-thumbnail">
             {% endif %}
             <h4 class="card-title">{{post.title}} <small>{{post.created_at|timesince}} ago</small> </h4>
-            <h5>Author: {{user.get_full_name}}</h5>
+            <h5>Author: {{user.get_username}}</h5>
             <p class="card-text">{{post.content|safe|linebreaks|truncatechars:150}}</p>
             <p>
             <a href="{{ post.get_absolute_url }}" class="btn btn-primary" role="button">Detail</a>
