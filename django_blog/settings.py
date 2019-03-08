@@ -25,7 +25,11 @@ SECRET_KEY = '1x(*wsqm-!#3l(a0*gk0-a2*e&li+qzam8(^hvr1r$rlv0cq=g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
+ALLOWED_HOSTS = ['3.17.191.85']
+=======
 ALLOWED_HOSTS = ['www.ferhatblog.info', 'ferhatblog.info', '3.17.191.85']
+>>>>>>> 82e7b8340797c6435b5c21d39f64ef8e299e391a
 
 
 # Application definition
