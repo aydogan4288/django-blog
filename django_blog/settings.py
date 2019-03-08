@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_cleanup',
     'ckeditor',
-    'captcha',
 ]
 
 MIDDLEWARE = [
